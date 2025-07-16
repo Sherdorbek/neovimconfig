@@ -10,5 +10,5 @@ vim.o.scrolloff = 10
 vim.o.number = true
 vim.o.relativenumber = true
 -- vim.o.numberwidth = 5
--- vim.o.cursorline = true
+vim.o.cursorline = true
 vim.o.signcolumn = "yes"

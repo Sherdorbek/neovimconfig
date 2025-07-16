@@ -17,9 +17,12 @@ require("lazy").setup("plugins")
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set({ "i", "n" }, "<C-s>", "<ESC>:w<CR>")
 
+-- Set highlight after Themery loads the colorscheme
+
 -- Customize colors
 -- vim.api.nvim_set_hl(0, "LineNr", { fg = "#888888" }) -- grey for relative
 -- vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#FFD700", bold = true })
+-- Set highlight for current line number (in relative number mode)
 
 vim.diagnostic.config({
 	virtual_text = {

@@ -29,7 +29,7 @@ return {
 		dap.adapters.php = {
 			type = "executable",
 			command = "node",
-			args = { "~/Documents/vscode-php-debug/out/phpDebug.js" },
+			args = { "/home/sherdor/Documents/vscode-php-debug/out/phpDebug.js" },
 		}
 
 		dap.configurations.php = {
@@ -41,7 +41,7 @@ return {
 			},
 		}
 
-		vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint, { desc = "Breakpoint" })
+		vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "Breakpoint" })
 		vim.keymap.set("n", "<leader>dc", dap.continue, { desc = "Debugger start/continue" })
 		vim.keymap.set("n", "<leader>dt", dapui.toggle, { desc = "Debugger UI" })
 	end,
